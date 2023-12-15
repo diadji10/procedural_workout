@@ -1,0 +1,25 @@
+ALGORITHM Produit_de_points
+VAR
+    Vecteur1,Vecteur2: ARRAY_OF INTEGER[2];
+BEGIN
+Write('Entrez la coordonnée x du premier vecteur')
+Read(Vecteur1[0])
+Write('Entrez la coordonnée y du premier vecteur')
+Read(Vecteur1[1])
+Write('Entrez la coordonnée x du second vecteur')
+Read(Vecteur2[0])
+Write('Entrez la coordonnée y du second vecteur')
+Read(Vecteur2[1])
+    FUNCTION dot_product(VAR v1,v2:ARRAY_OF INTEGER[2];) : return_type
+    VAR
+        ps:INTEGER
+    BEGIN
+    ps := v1[0]*v2[0] + v1[1]*v2[2]*
+    IF (p = 0) THEN
+        return 'Les deux vecteurs sont orthogonaux'
+    ELSE
+        return'Les vecteurs ne sont pas orthogonaux'
+    END_IF
+    END
+dot_product(Vecteur1,Vecteur2)
+END
