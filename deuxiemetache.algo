@@ -15,7 +15,7 @@ END_FOR
         j := i
         WHILE (j > 0 and tab[j-1] > elem) DO
             tab[j-1] := tab[j]
-            j = j - 1
+            j := j - 1
         END_WHILE
         t[j] := elem
     END_FOR
