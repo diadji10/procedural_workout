@@ -1,6 +1,25 @@
-ALGORITHM algorithm_name
+ALGORITHM TRI
 VAR
-    set_declarations
+    t:INTEGER
+    tableau: ARRAY_OF INTEGER[5];
 BEGIN
-    set_instructions
+FOR t FROM 0 TO 4 STEP 1  DO
+    Read (tableau[t])
+END_FOR
+    FUNCTION TRI_SELECTION(VAR tab: ARRAY_OF INTEGER[5])
+    VAR
+        elem,i,j:INTEGER
+    BEGIN
+    FOR i FROM 1 TO tab.length-1 STEP 1  DO
+        elem := tab[i]
+        j := i
+        WHILE (j > 0 and tab[j-1] > elem) DO
+            tab[j-1] := tab[j]
+            j = j - 1
+        END_WHILE
+        t[j] := elem
+    END_FOR
+    return tab
+    END
+    TRI_SELECTION(tableau)
 END

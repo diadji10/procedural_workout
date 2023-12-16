@@ -10,7 +10,7 @@ Write('Entrez la coordonnée x du second vecteur')
 Read(Vecteur2[0])
 Write('Entrez la coordonnée y du second vecteur')
 Read(Vecteur2[1])
-    FUNCTION dot_product(VAR v1,v2:ARRAY_OF INTEGER[2];) : return_type
+    FUNCTION dot_product(VAR v1,v2:ARRAY_OF INTEGER[2])
     VAR
         ps:INTEGER
     BEGIN
